@@ -12,6 +12,8 @@ if not exist "%CSC%" (
 "%CSC%" -nologo -codepage:65001 -target:winexe -optimize+ ^
     -out:"%CD%\MOSS-Image.exe" ^
     -r:System.dll -r:System.Drawing.dll -r:System.Windows.Forms.dll -r:System.Core.dll ^
+    -r:System.IO.Compression.dll -r:System.IO.Compression.FileSystem.dll ^
+    -resource:"%CD%\web\index.html",web.index.html ^
     "%~dp0Launcher.cs"
 
 if errorlevel 1 (
