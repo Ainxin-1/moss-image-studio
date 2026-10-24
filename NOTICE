@@ -1,0 +1,32 @@
+MOSS-Image Studio
+=================
+
+本仓库代码（launcher/Launcher.cs、scripts/、run.sh）以 MIT 许可发布，见 LICENSE。
+
+第三方组件与素材
+----------------
+
+1. stable-diffusion.cpp
+   - 项目：https://github.com/leejet/stable-diffusion.cpp
+   - 许可：MIT，Copyright (c) 2023 leejet
+   - 本仓库不包含其二进制。scripts/setup.* 会从官方 releases 下载；解压后的
+     bin/ 目录里带有 stable-diffusion.cpp.txt / ggml.txt 原始许可文本。
+
+2. web/index.html
+   - 由 stable-diffusion.cpp 官方 WebUI（同上 MIT 许可）加一层运行时中文语言包而成。
+   - 语言包只修改页面文本，不改变生成逻辑。
+
+3. MOSS-Image 模型权重
+   - 项目：https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
+   - 本仓库不包含权重。下载地址指向 leejet/MOSS-Image-SFT-GGUF、
+     OpenMOSS-Team/MOSS-Image-Base、Comfy-Org/MOSS-Image 等发布页，
+     使用前请阅读对应模型卡片的许可条款。
+
+4. Qwen3.5-9B 文本编码器（Q4_K_M GGUF）
+   - 发布页：https://huggingface.co/unsloth/Qwen3.5-9B-GGUF
+   - 许可以 Qwen 官方模型卡片为准。
+
+声明
+----
+本仓库只提供启动器、界面语言包和安装脚本，不包含模型权重，也不包含
+stable-diffusion.cpp 的可执行文件。生成内容的版权与合规责任由使用者承担。

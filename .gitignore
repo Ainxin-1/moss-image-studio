@@ -1,0 +1,9 @@
+# 构建产物与运行时目录
+/MOSS-Image.exe
+/moss.env
+/bin/
+/models/
+/downloads/
+/outputs/
+/.edge-profile/
+*.zip
